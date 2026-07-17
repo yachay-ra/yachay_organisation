@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-labelledby="titulo-lockup-a-inv">
+  <title id="titulo-lockup-a-inv">Yachay Research Associates — logo apilado (inverso)</title>
+  <g id="simbolo" transform="translate(60,0)">
+    <line x1="14" y1="18" x2="106" y2="18" stroke="#F7F5F0" stroke-width="5" stroke-linecap="round"/>
+    <line x1="25" y1="18" x2="25" y2="76" stroke="#5FA8D3" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="95" y1="18" x2="95" y2="68" stroke="#5FA8D3" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="43" y1="18" x2="60" y2="62" stroke="#F7F5F0" stroke-width="3.2"/>
+    <line x1="77" y1="18" x2="60" y2="62" stroke="#F7F5F0" stroke-width="3.2"/>
+    <line x1="60" y1="62" x2="60" y2="102" stroke="#F7F5F0" stroke-width="3.2" stroke-linecap="round"/>
+    <circle cx="25" cy="48" r="4" fill="#5FA8D3"/>
+    <circle cx="95" cy="42" r="4" fill="#5FA8D3"/>
+    <circle cx="51" cy="39" r="4.5" fill="#F7F5F0"/>
+    <circle cx="69" cy="39" r="4.5" fill="#F7F5F0"/>
+    <circle cx="60" cy="62" r="6.5" fill="#E8A13D"/>
+    <circle cx="60" cy="84" r="4.5" fill="#F7F5F0"/>
+  </g>
+  <text x="120" y="156" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-weight="600" font-size="40" fill="#F7F5F0">Yachay</text>
+  <text x="120" y="178" text-anchor="middle" font-family="Source Sans 3, Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="10.5" letter-spacing="2.3" fill="#9DC3DA">RESEARCH ASSOCIATES</text>
+</svg>
