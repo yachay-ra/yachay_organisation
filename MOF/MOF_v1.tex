@@ -1,0 +1,492 @@
+% =====================================================================
+% FUENTE DE VERDAD del MOF (decisión 2026-07-17)
+% Editar este archivo y preamble/preambulo.tex (paquetes, colores de
+% marca Yachay y metadatos del título).
+% Compilar:  latexmk -xelatex -cd MOF/MOF_v1.tex
+% (pdfLaTeX falla por el carácter U+2194 del cuerpo; usar siempre XeLaTeX)
+% MOF_v1.qmd está congelado como referencia histórica — no renderizarlo.
+% =====================================================================
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  spanish,
+]{article}
+
+% Preámbulo separado: paquetes, colores de marca Yachay y metadatos del título
+% Editar en preamble/preambulo.tex
+\input{preamble/preambulo}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Tabla de contenidos}
+{
+\hypersetup{linkcolor=yachaypetroleo}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+
+\newpage
+
+\begin{quote}
+\textbf{Versión:} 2.0\\
+\textbf{Elaborado por:} Darwin del Castillo\\
+\textbf{Aprobado por:} Darwin del Castillo\\
+\end{quote}
+
+\newpage
+
+\section{Introducción}\label{introducciuxf3n}
+
+\subsection{Objetivo del manual}\label{objetivo-del-manual}
+
+Establecer la estructura organizacional mínima, las responsabilidades y
+funciones de cada cargo, así como los procesos de trabajo y políticas
+internas para asegurar entregables reproducibles, calidad técnica y un
+servicio consistente a clientes de salud (farma, biotech, CROs y,
+progresivamente, ONGs) en Latinoamérica.
+
+\subsection{Alcance}\label{alcance}
+
+Aplica a: - Operaciones comerciales, administrativas y de entrega de
+proyectos. - Proyectos de analítica de datos, \textbf{RWE},
+diseño/ejecución de análisis, apoyo estadístico a \textbf{ensayos
+clínicos}, y \textbf{economía de la salud (HEOR)}. - Colaboradores
+internos y externos (contratistas) cuando existan.
+
+\subsection{Marco legal (plantilla)}\label{marco-legal-plantilla}
+
+\begin{quote}
+Ajusta esta sección a tu realidad legal (EE. UU. / Perú) y asesoría
+contable-jurídica.
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  Cumplimiento de contratos, confidencialidad y propiedad intelectual
+  según el país del cliente y el país de contratación.
+\item
+  Normas y buenas prácticas de protección de datos aplicables según
+  jurisdicción (por ejemplo, datos personales, datos sensibles de salud,
+  transferencias internacionales y acuerdos de procesamiento).
+\item
+  Reglas internas para manejo de datos, seguridad y trazabilidad de
+  entregables.
+\end{itemize}
+
+\section{Estructura organizacional}\label{estructura-organizacional}
+
+\subsection{Organigrama (estructura mínima --- 3
+personas)}\label{organigrama-estructura-muxednima-3-personas}
+
+La estructura se organiza en \textbf{una dirección general} y
+\textbf{dos funciones clave}: (a) desarrollo de negocio/marketing y (b)
+ejecución técnica con aseguramiento de calidad.
+
+\textbf{Organigrama (texto):}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Director General (CEO)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Director(a) de Marketing y Desarrollo de Negocio (CMO/BD)}
+  \item
+    \textbf{Consultor(a) Senior RWE/Epidemiología y Analítica (Delivery
+    Lead)}
+  \end{itemize}
+\end{itemize}
+
+\subsection{Niveles jerárquicos}\label{niveles-jeruxe1rquicos}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Dirección}: CEO\\
+\item
+  \textbf{Función comercial y relación con el cliente}: CMO/BD\\
+\item
+  \textbf{Función técnica y entrega}: Consultor Senior (Delivery Lead)
+\end{enumerate}
+
+\subsection{Principios de gobernanza operativa
+(ligera)}\label{principios-de-gobernanza-operativa-ligera}
+
+\begin{itemize}
+\tightlist
+\item
+  Las decisiones de \textbf{alcance, precio, contratación y riesgo} se
+  aprueban por el CEO.
+\item
+  El CMO/BD lidera \textbf{pipeline comercial}, propuestas y
+  coordinación de reuniones con stakeholders.
+\item
+  El Consultor Senior lidera la \textbf{ejecución técnica}, QA/QC y
+  consistencia metodológica.
+\item
+  Toda entrega formal al cliente pasa por \textbf{revisión} (CEO o
+  Consultor Senior, según el tipo de entregable).
+\end{itemize}
+
+\section{Descripción de cargos y
+funciones}\label{descripciuxf3n-de-cargos-y-funciones}
+
+\begin{quote}
+Para cada cargo: propósito, funciones, responsabilidades, autoridad,
+indicadores y requisitos mínimos.
+\end{quote}
+
+\subsection{Director General (CEO)}\label{director-general-ceo}
+
+\textbf{Objetivo del puesto}\\
+Definir la estrategia, asegurar sostenibilidad financiera, supervisar la
+calidad global y mantener relaciones clave con clientes y socios.
+
+\textbf{Funciones principales} - Definir posicionamiento, oferta de
+servicios y roadmap trimestral. - Aprobar propuestas, presupuestos,
+contratos y \emph{Statements of Work} (SoW). - Gestionar riesgos
+(legales, seguridad de datos, reputación, cronograma). - Supervisar
+calidad: estándar de reproducibilidad, documentación y QA/QC. - Definir
+y monitorear KPIs (ingresos, margen, recurrencia, tasa de conversión).
+
+\textbf{Responsabilidades} - Asegurar el cumplimiento de políticas de
+confidencialidad y seguridad. - Definir criterios de aceptación de
+entregables y planes de mitigación. - Priorizar el portafolio de
+proyectos y asignar recursos. - Representación institucional ante
+clientes estratégicos.
+
+\textbf{Autoridad / decisiones} - Firma final de contratos y NDAs (o
+delegación formal). - Aprobación de cambios mayores de alcance
+(\emph{change requests}). - Aprobación de contratación de terceros y
+compras de software.
+
+\textbf{Indicadores sugeridos (KPIs)} - \% de ingresos recurrentes
+(retainers) - Margen bruto por proyecto - \emph{Sales cycle} promedio
+(semanas) y tasa de conversión - Satisfacción del cliente (NPS o
+encuesta breve post-proyecto)
+
+\textbf{Requisitos mínimos} - Experiencia en investigación/analítica
+aplicada en salud. - Capacidad de comunicación ejecutiva y gestión de
+stakeholders. - Competencias en ética, confidencialidad y manejo de
+datos sensibles.
+
+\subsection{Director(a) de Marketing y Desarrollo de Negocio
+(CMO/BD)}\label{directora-de-marketing-y-desarrollo-de-negocio-cmobd}
+
+\textbf{Objetivo del puesto}\\
+Generar demanda y oportunidades de venta, liderar la preparación de
+propuestas y fortalecer la marca en el mercado regional.
+
+\textbf{Funciones principales} - Prospección y gestión de pipeline:
+lista de cuentas objetivo, \emph{outreach}, seguimiento. - Preparación
+de material comercial: one-pagers, pitch deck, casos de estudio
+anonimizados. - Redacción y coordinación de propuestas: alcance,
+cronograma, supuestos, entregables. - Coordinación de reuniones con
+clientes: agenda, actas, acuerdos y próximos pasos. - Gestión de
+reputación: contenido técnico-divulgativo (sin información sensible).
+
+\textbf{Responsabilidades} - Mantener el CRM (o registro simple)
+actualizado: leads, estado, probabilidad, próximos pasos. - Asegurar
+consistencia del mensaje y claridad del alcance en cada propuesta. -
+Documentar acuerdos comerciales y traspasar al equipo técnico
+(handover).
+
+\textbf{Autoridad / decisiones} - Proponer precios y paquetes (sujeto a
+aprobación del CEO). - Definir la estrategia de contenido y calendario
+editorial.
+
+\textbf{Indicadores sugeridos (KPIs)} - \# de leads calificados/mes - \#
+de propuestas enviadas/mes y \% ganadas - Tiempo promedio de respuesta a
+solicitudes - Crecimiento de red y \emph{engagement} (si aplica)
+
+\textbf{Requisitos mínimos} - Experiencia en marketing B2B o desarrollo
+de negocio en salud/tecnología. - Redacción profesional (propuestas,
+SoW) y habilidades de negociación. - Comprensión básica de
+HEOR/RWE/estadística (para vender con precisión).
+
+\subsection{Consultor(a) Senior RWE/Epidemiología y Analítica (Delivery
+Lead)}\label{consultora-senior-rweepidemiologuxeda-y-analuxedtica-delivery-lead}
+
+\textbf{Objetivo del puesto}\\
+Garantizar la entrega técnica con rigor, reproducibilidad y calidad,
+traduciendo necesidades del cliente en análisis y productos finales
+listos para toma de decisiones.
+
+\textbf{Funciones principales} - Liderar el diseño analítico: preguntas,
+estimandos, supuestos, plan analítico (mini-SAP). - Ejecución técnica:
+R/Python/SQL, modelamiento HEOR y/o análisis RWE. - Preparar
+entregables: reportes, tablas, figuras, anexos reproducibles y
+presentaciones. - Implementar QA/QC: validaciones, revisión cruzada,
+auditoría de supuestos. - Soporte a reuniones técnicas con cliente:
+explicar metodología y resultados.
+
+\textbf{Responsabilidades} - Mantener repositorios privados, control de
+versiones y trazabilidad. - Documentar decisiones técnicas (por ejemplo,
+supuestos de modelo, definiciones de cohortes). - Gestionar riesgos
+técnicos (calidad de datos, sesgos, limitaciones) y comunicar temprano.
+
+\textbf{Autoridad / decisiones} - Definir estándares de QA y criterios
+de aceptación técnica. - Proponer mejoras de pipeline y automatización
+(sujeto a priorización del CEO).
+
+\textbf{Indicadores sugeridos (KPIs)} - \% entregables aceptados sin
+retrabajo mayor - Tiempo de ciclo por sprint / hito - Hallazgos QA
+detectados internamente vs reportados por cliente - Reutilización de
+componentes (plantillas/código)
+
+\textbf{Requisitos mínimos} - Formación sólida en
+epidemiología/biostatística/HEOR o ciencia de datos en salud. - Dominio
+de análisis reproducible (control de versiones, documentación). -
+Experiencia con datos observacionales y/o modelos de decisión en salud.
+
+\section{Mapa de procesos y flujos de
+trabajo}\label{mapa-de-procesos-y-flujos-de-trabajo}
+
+\begin{quote}
+Los procesos se diseñan para una operación pequeña: claridad de roles,
+entregables estándar y control de cambios.
+\end{quote}
+
+\subsection{Proceso 1 --- Captación y
+preventa}\label{proceso-1-captaciuxf3n-y-preventa}
+
+\textbf{Objetivo:} generar y convertir leads en propuestas aprobadas.\\
+\textbf{Entradas:} cuentas objetivo, requerimientos preliminares,
+RFPs.\\
+\textbf{Salidas:} diagnóstico 1--2 páginas, propuesta + SoW, estimación
+de costos y cronograma.
+
+\textbf{Actividades} 1. Identificación de lead (CMO/BD) 2.
+\emph{Discovery call} (CMO/BD + CEO/Consultor, según complejidad) 3.
+Diagnóstico breve y opciones de paquete (CMO/BD) 4. Propuesta + SoW +
+timeline (CMO/BD; revisión CEO/Consultor) 5. Negociación y cierre (CEO)
+
+\subsection{Proceso 2 --- Inicio de proyecto
+(kickoff)}\label{proceso-2-inicio-de-proyecto-kickoff}
+
+\textbf{Objetivo:} alinear alcance, datos y criterios de aceptación.\\
+\textbf{Entradas:} contrato/SoW, NDA, inventario de datos.\\
+\textbf{Salidas:} plan analítico (mini-SAP), cronograma por hitos, plan
+de comunicación.
+
+\textbf{Artefactos} - Minuta de kickoff - Mini-SAP (estimandos,
+supuestos, covariables, criterios) - Plan de entrega (hitos y
+\emph{review gates})
+
+\subsection{Proceso 3 --- Ejecución técnica
+(delivery)}\label{proceso-3-ejecuciuxf3n-tuxe9cnica-delivery}
+
+\textbf{Objetivo:} producir análisis y entregables según SoW.\\
+\textbf{Entradas:} datos, mini-SAP, definiciones y supuestos.\\
+\textbf{Salidas:} resultados reproducibles, reportes y/o modelos.
+
+\textbf{Modalidad recomendada} - Sprints semanales con demo interna -
+Revisión de supuestos antes de ``congelar'' resultados
+
+\subsection{Proceso 4 --- Control de calidad
+(QA/QC)}\label{proceso-4-control-de-calidad-qaqc}
+
+\textbf{Objetivo:} reducir errores y asegurar consistencia
+metodológica.\\
+\textbf{Mínimo viable para 3 personas} - Revisión cruzada de outputs
+(Consultor Senior ↔ CEO) cuando sea posible. - Checklist QA por tipo de
+proyecto (RWE, HEOR, ensayos).
+
+\textbf{Ejemplos de controles} - Validación de definiciones de cohortes
+y conteos. - Revisión de supuestos y sensibilidad en HEOR. -
+Reproducibilidad: correr pipeline desde cero en entorno limpio.
+
+\subsection{Proceso 5 --- Entrega y
+cierre}\label{proceso-5-entrega-y-cierre}
+
+\textbf{Objetivo:} entregar productos finales y acordar siguientes
+pasos.\\
+\textbf{Salidas:} deck ejecutivo, reporte técnico, anexos,
+código/documentación (según contrato).
+
+\textbf{Cierre} - Reunión de resultados - Acta de aceptación - Lecciones
+aprendidas (interna) - Propuesta de retainer o fase 2 (CMO/BD + CEO)
+
+\section{Matriz RACI (3 personas)}\label{matriz-raci-3-personas}
+
+\begin{longtable}[]{@{}lrrr@{}}
+\toprule\noalign{}
+Proceso / Actividad & CEO & CMO/BD & Consultor Senior \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Prospección y pipeline & A & R & C \\
+Discovery call & A & R & C \\
+Propuesta y SoW & A & R & C \\
+Negociación / contrato & R/A & C & C \\
+Kickoff y mini-SAP & A & C & R \\
+Ejecución técnica & C & I & R/A \\
+QA/QC & A & I & R \\
+Entrega al cliente & A & C & R \\
+Cierre y retroalimentación & A & R & C \\
+\end{longtable}
+
+\textbf{Leyenda:} R = Responsible, A = Accountable, C = Consulted, I =
+Informed
+
+\section{Políticas y normas
+internas}\label{poluxedticas-y-normas-internas}
+
+\subsection{Confidencialidad y manejo de
+datos}\label{confidencialidad-y-manejo-de-datos}
+
+\begin{itemize}
+\tightlist
+\item
+  Todo proyecto requiere NDA/claúsulas de confidencialidad.
+\item
+  Minimización de datos: usar solo lo necesario y con acceso
+  restringido.
+\item
+  Repositorios privados, control de acceso y cifrado de información
+  sensible.
+\item
+  Prohibición de usar datos de cliente para demos sin autorización
+  explícita.
+\end{itemize}
+
+\subsection{Gestión de documentación y
+reproducibilidad}\label{gestiuxf3n-de-documentaciuxf3n-y-reproducibilidad}
+
+\begin{itemize}
+\tightlist
+\item
+  Todo proyecto debe incluir:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    diccionario de datos (cuando aplique),
+  \item
+    README de ejecución,
+  \item
+    control de versiones,
+  \item
+    registro de supuestos y decisiones.
+  \end{itemize}
+\item
+  Entregables con fechas, versión y responsable.
+\end{itemize}
+
+\subsection{Control de cambios (scope
+creep)}\label{control-de-cambios-scope-creep}
+
+\begin{itemize}
+\tightlist
+\item
+  Cualquier cambio de alcance se gestiona mediante:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    solicitud de cambio,
+  \item
+    evaluación de impacto (tiempo/costo),
+  \item
+    aprobación del CEO,
+  \item
+    actualización del SoW.
+  \end{itemize}
+\end{itemize}
+
+\subsection{Capacitación y
+desarrollo}\label{capacitaciuxf3n-y-desarrollo}
+
+\begin{itemize}
+\tightlist
+\item
+  Revisión mensual interna de buenas prácticas (QA, reproducibilidad,
+  seguridad).
+\item
+  Librería interna de plantillas (reportes, tablas, figuras, decks).
+\item
+  Lecciones aprendidas por proyecto.
+\end{itemize}
+
+\section{Anexos (plantillas
+sugeridas)}\label{anexos-plantillas-sugeridas}
+
+\subsection{Anexo A --- Formato de informe (estructura
+mínima)}\label{anexo-a-formato-de-informe-estructura-muxednima}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Resumen ejecutivo\\
+\item
+  Contexto y objetivo\\
+\item
+  Datos y definiciones\\
+\item
+  Métodos\\
+\item
+  Resultados\\
+\item
+  Sensibilidades / limitaciones\\
+\item
+  Conclusiones y recomendaciones\\
+\item
+  Anexos reproducibles (tablas/figuras/código, según contrato)
+\end{enumerate}
+
+\subsection{Anexo B --- Matriz de aceptación de cambios (change
+request)}\label{anexo-b-matriz-de-aceptaciuxf3n-de-cambios-change-request}
+
+\begin{itemize}
+\tightlist
+\item
+  Cambio solicitado
+\item
+  Motivo
+\item
+  Impacto en tiempo/costo
+\item
+  Aprobación (fecha, responsable)
+\item
+  Actualización del SoW
+\end{itemize}
+
+\subsection{Anexo C --- Lista de normativas aplicables
+(placeholder)}\label{anexo-c-lista-de-normativas-aplicables-placeholder}
+
+\begin{itemize}
+\tightlist
+\item
+  Protección de datos (jurisdicción cliente)
+\item
+  Seguridad de información interna
+\item
+  Ética y cumplimiento en investigación/consultoría en salud
+\end{itemize}
+
+\section{Historial de revisión}\label{historial-de-revisiuxf3n}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Versión & Fecha & Descripción & Autor \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1.0 & 2026-02-11 & Versión inicial & Darwin del Castillo \\
+\end{longtable}
+
+
+
+
+\end{document}

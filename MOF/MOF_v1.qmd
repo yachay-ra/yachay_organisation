@@ -24,6 +24,15 @@ execute:
   warning: false
   message: false
 ---
+
+<!--
+CONGELADO (2026-07-17): este .qmd ya NO es la fuente de verdad del MOF.
+La fuente es MOF/MOF_v1.tex + MOF/preamble/preambulo.tex (compilar con
+`latexmk -xelatex -cd MOF/MOF_v1.tex`). NO renderizar este archivo con
+Quarto: regeneraría MOF_v1.tex monolítico y destruiría la estructura
+dividida. Se conserva solo como referencia histórica.
+-->
+
 \newpage
 > **Versión:** 2.0 \
 > **Elaborado por:** Darwin del Castillo \
