@@ -16,7 +16,7 @@ Documents are authored in Quarto (`.qmd`), Markdown, and LaTeX (the MOF); PDFs a
 | `pitch-deck/pitch_deck_revealjs_quarto.qmd` — pitch deck (renders to revealjs HTML, tema `pitch-deck/yachay.scss`) | `pitch-deck/pitch_deck_revealjs_quarto.html`, `pitch-deck/pitch_deck_revealjs_quarto_files/` |
 | `branding/01-04_*.md`, `branding/brand_board.html` (hand-authored), `branding/assets/*.svg` — identidad visual v1 (sistema "Telar") | `branding/assets/logo_*_contornos.svg` y `master_yachay.svg` se regeneran con `branding/scripts/generar_contornos.py` |
 
-**MOF: la fuente de verdad es el `.tex`, no el `.qmd`.** `MOF/MOF_v1.qmd` está congelado como referencia histórica (decisión 2026-07-17) — nunca renderizarlo con Quarto: regeneraría `MOF_v1.tex` monolítico y destruiría la estructura dividida con `preamble/`.
+**MOF: la fuente de verdad es el `.tex`.** El antiguo `MOF_v1.qmd` fue eliminado (decisión 2026-07-17; recuperable del historial de git). No recrear un `.qmd` del MOF ni renderizarlo con Quarto: pisaría `MOF_v1.tex` y destruiría la estructura dividida con `preamble/`.
 
 Edit only the sources listed above. Never hand-edit `.pdf`, generated `.html`, or anything under `*_files/` — regenerate them instead. (`branding/brand_board.html` es fuente escrita a mano, no salida generada.)
 
