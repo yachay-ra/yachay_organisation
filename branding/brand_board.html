@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yachay — Brand Board v1</title>
+<link rel="icon" href="assets/favicon.svg">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono&display=swap');
+  :root {
+    --petroleo:#1B4965; --acero:#5FA8D3; --ambar:#E8A13D;
+    --pizarra:#2E3440; --hueso:#F7F5F0; --niebla:#5F7A8C;
+    --fondo:var(--hueso); --texto:var(--pizarra); --tarjeta:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#15222B; --texto:var(--hueso); --tarjeta:#1B4965; }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--fondo); color:var(--texto); font-family:'Source Sans 3','Helvetica Neue',Arial,sans-serif; line-height:1.6; padding:40px 20px; }
+  main { max-width:960px; margin:0 auto; display:grid; gap:28px; }
+  h1,h2 { font-family:'Source Serif 4',Georgia,serif; color:var(--petroleo); }
+  @media (prefers-color-scheme: dark) { h1,h2 { color:var(--acero); } }
+  h2 { font-size:1.25rem; margin-bottom:12px; }
+  section { background:var(--tarjeta); border-radius:10px; padding:24px 28px; }
+  .lockup-hero { text-align:center; padding:44px 20px; background:#FFFFFF; }
+  .lockup-hero img { max-width:340px; width:80%; }
+  .lockup-hero p { color:var(--niebla); margin-top:14px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; }
+  .celda { background:var(--hueso); border-radius:8px; padding:18px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; text-align:center; }
+  .celda.oscura { background:var(--petroleo); }
+  .celda img { max-width:110px; max-height:96px; }
+  .celda small { font-size:0.72rem; color:var(--niebla); letter-spacing:0.06em; text-transform:uppercase; }
+  .celda.oscura small { color:#9DC3DA; }
+  .swatch { border-radius:8px; padding:14px 12px; color:#fff; min-height:96px; }
+  .swatch code { font-family:'JetBrains Mono',monospace; font-size:0.75rem; opacity:0.9; display:block; }
+  .swatch small { display:block; font-size:0.75rem; margin-top:2px; }
+  ul.reglas { padding-left:20px; }
+  ul.reglas li::marker { color:var(--ambar); }
+  .tipo-serif { font-family:'Source Serif 4',Georgia,serif; font-weight:600; font-size:1.5rem; color:var(--petroleo); }
+  @media (prefers-color-scheme: dark) { .tipo-serif { color:var(--acero); } }
+  .tipo-mono { font-family:'JetBrains Mono',monospace; font-size:0.85rem; background:var(--hueso); color:var(--pizarra); padding:4px 8px; border-radius:4px; display:inline-block; }
+  .dos-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:640px) { .dos-col { grid-template-columns:1fr; } }
+  .ok { border-left:4px solid #4C9A6A; padding-left:12px; }
+  .mal { border-left:4px solid #B3544F; padding-left:12px; }
+  .nota { font-size:0.85rem; color:var(--niebla); margin-top:10px; }
+  footer { text-align:center; font-size:0.8rem; color:var(--niebla); }
+</style>
+</head>
+<body>
+<main>
+  <section class="lockup-hero">
+    <img src="assets/logo_horizontal.svg" alt="Yachay Research Associates — logo horizontal">
+    <p>Brand board v1 · Evidencia que decide.</p>
+  </section>
+
+  <section>
+    <h2>Sistema de versiones</h2>
+    <div class="grid">
+      <div class="celda"><img src="assets/logo_apilado.svg" alt="Lockup apilado"><small>Apilado · LinkedIn, portadas</small></div>
+      <div class="celda"><img src="assets/simbolo.svg" alt="Símbolo Telar"><small>Símbolo · sellos, marca de agua</small></div>
+      <div class="celda"><img src="assets/marca_minima.svg" alt="Marca mínima Cascada" style="max-width:34px;"><small>Mínima · favicon ≤32px</small></div>
+      <div class="celda oscura"><img src="assets/logo_horizontal_inverso.svg" alt="Logo inverso"><small>Inverso · fondos oscuros</small></div>
+    </div>
+    <p class="nota">Para trabajo de diseño: <code>assets/master_yachay.svg</code> (lienzo con todo, sin dependencia de fuentes) y <code>assets/logo_*_contornos.svg</code>.</p>
+  </section>
+
+  <section>
+    <h2>Paleta</h2>
+    <div class="grid">
+      <div class="swatch" style="background:#1B4965;"><strong>Azul petróleo</strong><code>#1B4965</code><small>primario · logo, títulos</small></div>
+      <div class="swatch" style="background:#5FA8D3;"><strong>Azul acero</strong><code>#5FA8D3</code><small>gráficos, enlaces</small></div>
+      <div class="swatch" style="background:#E8A13D;"><strong>Ámbar andino</strong><code>#E8A13D</code><small>acento · ≤10% por pieza</small></div>
+      <div class="swatch" style="background:#2E3440;"><strong>Gris pizarra</strong><code>#2E3440</code><small>texto</small></div>
+      <div class="swatch" style="background:#F7F5F0;color:#2E3440;border:1px solid #ccc;"><strong>Hueso</strong><code>#F7F5F0</code><small>fondos</small></div>
+      <div class="swatch" style="background:#5F7A8C;"><strong>Azul niebla</strong><code>#5F7A8C</code><small>descriptor, metadatos</small></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tipografía</h2>
+    <p class="tipo-serif">Source Serif 4 — títulos y marca</p>
+    <p>Source Sans 3 — cuerpo de texto, tablas y UI.</p>
+    <p class="tipo-mono">JetBrains Mono — código en entregables reproducibles</p>
+    <p class="nota">Los SVG con <code>&lt;text&gt;</code> requieren las fuentes instaladas (Google Fonts) para render fiel; las versiones <code>_contornos</code> no dependen de fuentes.</p>
+  </section>
+
+  <section>
+    <h2>Reglas de uso</h2>
+    <div class="dos-col">
+      <div class="ok">
+        <strong>Sí</strong>
+        <ul class="reglas">
+          <li>Lockup horizontal como versión por defecto</li>
+          <li>Apilado en formatos cuadrados (LinkedIn) y portadas</li>
+          <li>Inverso sobre azul petróleo u oscuro; ámbar y acero no cambian</li>
+          <li>Área de respeto: la altura de la "Y" del símbolo</li>
+          <li>Nudo cuadrado ámbar como bullet en documentos</li>
+        </ul>
+      </div>
+      <div class="mal">
+        <strong>No</strong>
+        <ul class="reglas">
+          <li>No estirar, rotar ni cambiar colores</li>
+          <li>No usar sombras, degradados ni efectos</li>
+          <li>No usar el Telar completo por debajo de 32px (usar la mínima)</li>
+          <li>No superar ~10% de ámbar en una pieza</li>
+          <li>No colocar sobre fondos con ruido visual</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>Yachay Research Associates LLC · Identidad v1 · 2026 — Spec: docs/superpowers/specs/2026-07-17-identidad-visual-yachay-design.md</footer>
+</main>
+</body>
+</html>
