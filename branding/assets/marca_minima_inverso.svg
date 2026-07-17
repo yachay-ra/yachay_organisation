@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="titulo-minima-inv">
+  <title id="titulo-minima-inv">Yachay — marca mínima Cascada (inverso)</title>
+  <line x1="18" y1="18" x2="102" y2="18" stroke="#F7F5F0" stroke-width="7" stroke-linecap="round"/>
+  <line x1="38" y1="18" x2="60" y2="58" stroke="#F7F5F0" stroke-width="6"/>
+  <line x1="82" y1="18" x2="60" y2="58" stroke="#F7F5F0" stroke-width="6"/>
+  <line x1="60" y1="58" x2="60" y2="100" stroke="#F7F5F0" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="60" cy="58" r="11" fill="#E8A13D"/>
+</svg>
