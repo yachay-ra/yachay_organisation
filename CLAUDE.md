@@ -25,7 +25,7 @@ Edit only the sources listed above. Never hand-edit `.pdf`, generated `.html`, o
 There is no `_quarto.yml` project file; each Quarto document carries its own `format:` configuration in YAML frontmatter and is rendered individually:
 
 ```bash
-latexmk -xelatex -cd MOF/MOF_v1.tex           # MOF PDF (XeLaTeX obligatorio: pdfLaTeX falla por un carácter U+2194)
+latexmk -xelatex -cd MOF/MOF_v1.tex           # MOF PDF (XeLaTeX es el motor oficial: fija las fuentes del render)
 quarto render pitch-deck/pitch_deck_revealjs_quarto.qmd  # revealjs slides
 quarto preview pitch-deck/pitch_deck_revealjs_quarto.qmd # live-reload preview while editing
 ```

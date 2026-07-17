@@ -1,9 +1,10 @@
+% !TEX program = xelatex
 % =====================================================================
 % FUENTE DE VERDAD del MOF (decisión 2026-07-17)
 % Editar este archivo y preamble/preambulo.tex (paquetes, colores de
 % marca Yachay y metadatos del título).
 % Compilar:  latexmk -xelatex -cd MOF/MOF_v1.tex
-% (pdfLaTeX falla por el carácter U+2194 del cuerpo; usar siempre XeLaTeX)
+% (XeLaTeX es el motor oficial: fija las fuentes del render de Quarto)
 % El antiguo MOF_v1.qmd fue eliminado (2026-07-17); se conserva en el
 % historial de git si se necesita consultar.
 % =====================================================================
@@ -298,7 +299,7 @@ Revisión de supuestos antes de ``congelar'' resultados
 \textbf{Objetivo:} reducir errores y asegurar consistencia
 metodológica.\\
 \textbf{Mínimo viable para 3 personas} - Revisión cruzada de outputs
-(Consultor Senior ↔ CEO) cuando sea posible. - Checklist QA por tipo de
+(Consultor Senior \(\leftrightarrow\) CEO) cuando sea posible. - Checklist QA por tipo de
 proyecto (RWE, HEOR, ensayos).
 
 \textbf{Ejemplos de controles} - Validación de definiciones de cohortes
