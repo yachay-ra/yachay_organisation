@@ -77,6 +77,8 @@ def cascada(principal=PETROLEO):
 def main(dir_fuentes):
     serif = Path(dir_fuentes) / "serif600.ttf"
     sans = Path(dir_fuentes) / "sans600.ttf"
+    if not serif.is_file() or not sans.is_file():
+        sys.exit(f"Faltan fuentes en {dir_fuentes}: se requieren serif600.ttf y sans600.ttf")
     yachay46, _ = texto_a_path(serif, "Yachay", 46)
     desc115, _ = texto_a_path(sans, "RESEARCH ASSOCIATES", 11.5, letter_spacing=2.5)
     yachay40, ancho40 = texto_a_path(serif, "Yachay", 40)
