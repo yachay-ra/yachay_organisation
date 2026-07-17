@@ -80,7 +80,11 @@ Todas Google Fonts (open source, sin licencias).
 
 En `branding/assets/`:
 
-1. `logo_horizontal.svg` (principal), `logo_apilado.svg`, `simbolo.svg`, `marca_minima.svg` — cada uno con variante `_inverso.svg` y `_mono.svg`. El wordmark va como `<text>` con la pila de fuentes (`Source Serif 4, Georgia, serif`); la conversión a contornos queda para una iteración futura con herramienta tipográfica, y se documenta esta limitación en el brand board (los SVG requieren la fuente instalada o webfont para renderizar fiel).
+1. `logo_horizontal.svg` (principal), `logo_apilado.svg`, `simbolo.svg`, `marca_minima.svg` — cada uno con variante `_inverso.svg` y `_mono.svg`. El wordmark va como `<text>` con la pila de fuentes (`Source Serif 4, Georgia, serif`) para mantenerlo editable como texto; la fidelidad sin fuentes la cubren los archivos de contornos (punto 6).
+6. **Archivos para trabajo de diseño humano** (editables en Illustrator/Figma/Inkscape):
+   - `logo_horizontal_contornos.svg` y `logo_apilado_contornos.svg` — wordmark y descriptor convertidos a contornos (paths) con shaping tipográfico real (fonttools + uharfbuzz), de modo que rendericen idénticos sin fuentes instaladas.
+   - `master_yachay.svg` — lienzo único con todas las versiones (lockups en contornos, símbolo, mínima, panel inverso, paleta) en grupos con `id` nombrados, listo para importar a herramientas de diseño.
+   - `branding/scripts/generar_contornos.py` — script reproducible que genera los tres archivos anteriores desde las fuentes originales.
 2. `favicon.svg` (Cascada).
 3. `brand_board.html` — página autocontenida con todo el sistema (logo, versiones, paleta, tipografía, ejemplos ✓/✗ de uso) como manual v1 navegable.
 4. Tema Quarto: `pitch-deck/yachay.scss` aplicado al frontmatter de `pitch_deck_revealjs_quarto.qmd` (colores, fuentes, logo en slides); variables de color LaTeX para el MOF (colorlinks y titulares en azul petróleo).
@@ -96,6 +100,7 @@ En `branding/assets/`:
 ## Criterios de aceptación
 
 - Los SVG renderizan idénticos a los bocetos aprobados de la sesión (geometría de las tablas anteriores).
+- Los archivos `_contornos` no contienen ningún elemento `<text>` y renderizan el wordmark fiel en un sistema sin las fuentes instaladas; `generar_contornos.py` es re-ejecutable.
 - El favicon es legible a 16px y 32px.
 - `quarto render pitch-deck/pitch_deck_revealjs_quarto.qmd` produce el deck con tema Yachay sin errores.
 - El brand board se ve correcto en claro y oscuro y no depende de recursos externos salvo Google Fonts.
